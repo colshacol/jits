@@ -1,0 +1,7 @@
+{
+  "name": "jits",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "description": "A CLI tool to create Gists from files.",
+  "license": "MIT"
+}
