@@ -10,7 +10,8 @@
 		"license": "MIT",
 		"scripts": {
 				"jits": "yarn build && clear && node ./bin",
-				"build": "babel src --out-dir bin"
+				"build": "babel src --out-dir bin",
+				"prepublishOnly": "npm run build"
 		},
 		"dependencies": {
 				"@octokit/rest": "^15.2.7",
