@@ -1,3 +1,6 @@
 node_modules
 *.log
 src
+
+.nvmrc
+.editorconfig
