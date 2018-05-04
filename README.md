@@ -1,6 +1,6 @@
 # jits 🎻
 
-A cli tool to create rawGit hosted Gists from your terminal.
+A cli tool to create RawGit hosted Gists from your terminal.
 
 ## Motivation
 

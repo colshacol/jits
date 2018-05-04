@@ -1,11 +1,12 @@
 {
 		"name": "jits",
 		"version": "0.0.11",
+		"reveal": true,
 		"bin": {
 				"jits": "./bin/index.js"
 		},
 		"main": "./bin/index.js",
-		"description": "A CLI tool to create Gists from files.",
+		"description": "🎻 A cli tool to create RawGit hosted Gists from your terminal.",
 		"license": "MIT",
 		"scripts": {
 				"jits": "yarn build && clear && node ./bin",
