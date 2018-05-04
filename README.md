@@ -2,6 +2,8 @@
 
 A cli tool to create RawGit hosted Gists from your terminal.
 
+![demo picture thing](https://image.ibb.co/gghUPS/Screen_Shot_2018_05_04_at_3_40_23_AM.png)
+
 ## Motivation
 
 At work we have gotten into the swing of demoing changes to our component library on CodeSandbox. When one of us
