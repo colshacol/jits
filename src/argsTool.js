@@ -59,7 +59,7 @@ export const argsTool = meow(helpMessage, {
 		},
 		setPass: {
 			type: 'string',
-			alias: 'SP'
+			alias: 'sp'
 		}
 	}
 })
