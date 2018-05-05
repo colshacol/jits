@@ -8,14 +8,14 @@ const helpMessage = `
 
 # options:
 
-  --file, -F          # The path to the file you wish to upload.
-  --dir, -F           # [no workie yet] The path to the directory you wish to upload.
+  --file, -f          # The path to the file you wish to upload.
+  --dir, -f           # [no workie yet] The path to the directory you wish to upload.
 
-  --user, -U          # The Github username to use for authentication.
-  --pass, -P          # The Github password to use for authentication.
+  --user, -u          # The Github username to use for authentication.
+  --pass, -p          # The Github password to use for authentication.
 
-  --set-user, -SU     # Set and persist your Github username.
-  --set-pass, -SP     # Set and persist your Github password.
+  --set-user, -su     # Set and persist your Github username.
+  --set-pass, -sp     # Set and persist your Github password.
 
 # examples:
 
@@ -34,28 +34,28 @@ const helpMessage = `
 `
 
 export const argsTool = meow(helpMessage, {
-	description: emoji.emojify('jits :violin:  A cli tool to create rawGit hosted Gists from your terminal.'),
+	description: emoji.emojify('jits :violin:  A cli tool to create RawGit hosted Gists from your terminal.'),
 	booleanDefault: null,
 	flags: {
 		file: {
 				type: 'string',
-				alias: 'F'
+				alias: 'f'
 		},
 		dir: {
 			type: 'string',
-			alias: 'D'
+			alias: 'd'
 		},
 		user: {
 			type: 'string',
-			alias: 'U'
+			alias: 'u'
 		},
 		pass: {
 			type: 'string',
-			alias: 'P'
+			alias: 'p'
 		},
 		setUser: {
 			type: 'string',
-			alias: 'SU'
+			alias: 'su'
 		},
 		setPass: {
 			type: 'string',

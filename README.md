@@ -10,7 +10,7 @@ At work we have gotten into the swing of demoing changes to our component librar
 
 _It becomes quite tedious_ to build, go find the `bundle.js` in the build directory, wait patiently as my editor fights for its life to open such a large file, copy the whole damn thing, head to CodeSandbox, create a new file, paste in the bundle, and wait patiently as CodeSandbox fights for its life to handle such a large file.
 
-So I created jits to smooth this process out by automating the hard part. :) jits will upload a file into a new Github Gist, run the Gist through RawGit so that it is served with the correct mime-types and all that jazz, and then provide you with the url to the file, conveniently placed in your clipboard.
+So I created jits to smooth this process out by automating the hard part. :) jits will upload a file into a new Github Gist, run the Gist through RawGit so that it is served with the correct mime-types and all that jazz, and then provides you with the url to the file, conveniently placed in your clipboard.
 
 ## Usage
 
@@ -37,16 +37,16 @@ That said, jits is a joy to use, because, like Ken Wheeler says, _when you ain't
 
 # options:
 
-  --file, -F          # The path to the file you wish to upload.
-  --dir, -D           # [no workie yet] The path to the directory you wish to upload.
+  --file, -f          # The path to the file you wish to upload.
+  --dir, -d           # [no workie yet] The path to the directory you wish to upload.
 	
   # In regards to providing paths to jits, the path must be relative to your package.json.
 
-  --user, -U          # The Github username to use for authentication.
-  --pass, -P          # The Github password to use for authentication.
+  --user, -u          # The Github username to use for authentication.
+  --pass, -p          # The Github password to use for authentication.
 
-  --set-user, -SU     # Set and persist your Github username.
-  --set-pass, -SP     # Set and persist your Github password.
+  --set-user, -su     # Set and persist your Github username.
+  --set-pass, -sp     # Set and persist your Github password.
 
 # examples:
 
@@ -57,10 +57,10 @@ That said, jits is a joy to use, because, like Ken Wheeler says, _when you ain't
   jits --set-user joedirt12
 
   # Provide password for future usage by jits.
-  jits --set-pass digit1234
+  jits -sp digit1234
 
   # Upload a file simply, relying on previously set authentication data.
-  jits -f dist/js/bundle.js
+  jits --file dist/js/bundle.js
 ```
 
 ## Notes
