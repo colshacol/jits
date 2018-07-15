@@ -10,6 +10,10 @@ export const handleAuthValues = (conf, flags) => {
 		conf.set('password', flags.setPass)
 		flags.pass = flags.setPass
 	}
+	
+	if ((flags.setPass && !flags.setUser) || (flags.setUser && !flags.setPass)) {
+		return
+	}
 
 	flags.user = flags.user || conf.get('username')
 	flags.pass = flags.pass || conf.get('password')
