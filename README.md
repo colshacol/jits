@@ -65,6 +65,10 @@ That said, jits is a joy to use, because, like Ken Wheeler says, _when you ain't
 
 ## Notes
 
+**jits does not suppoert 2FA yet.**
+
+---
+
 _I don't know if anybody will ever read this._
 
 _If you are reading this_, that means I have probably been dead and gone for a long time now. I don't
